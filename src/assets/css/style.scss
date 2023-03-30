@@ -1,0 +1,147 @@
+@import "auth";
+@import "sidebar";
+@import "footer";
+@import "header";
+@import "clients";
+@import "services";
+@import "quotas";
+@import "booking";
+@import "index";
+@import "modal";
+
+.free-wrapper {
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #F3F4F6;
+}
+
+.main-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  background: $main-wrapper;
+}
+
+.body-wrapper {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  width: 100%;
+}
+
+.content-wrapper {
+  width: 1460px;
+  height: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.filter-items {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+
+  .item {
+    font-family: 'DIN Pro', serif;
+    color: #2D3134;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 15px 20px;
+    border-radius: 14px;
+    cursor: pointer;
+  }
+
+  .item.active {
+    border: 1px solid #EAEAEA;
+  }
+}
+
+.statistics,
+.statistics-revert {
+  .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .infos {
+      font-family: 'DIN Pro', serif;
+
+      .value {
+        font-weight: 600;
+        font-size: 32px;
+        color: #2D3134;
+      }
+
+      .type {
+        font-weight: 400;
+        font-size: 15px;
+        color: #717579;
+        margin-top: 5px;
+      }
+    }
+
+    .icon {
+      width: 80px;
+      height: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 24px;
+      // padding: 26px 28px;
+      background: linear-gradient(180deg, rgba(246, 111, 77, 0.15) 0%, rgba(246, 111, 77, 0.06) 100%);
+      border-radius: 24px;
+    }
+  }
+}
+
+.statistics-revert {
+  .item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    .infos {
+      margin-left: 35px;
+    }
+  }
+}
+
+.filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+
+  .filter-items {
+    width: initial;
+  }
+}
+
+
+.tabs {
+  display: flex;
+  justify-content: flex-start;
+
+  .tab-item {
+    padding: 10px 10px;
+    cursor: pointer;
+
+    &.active {
+      border-left: 1px solid #dee2e6;
+      border-right: 1px solid #dee2e6;
+      border-top: 1px solid #dee2e6;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+  }
+}
+
+.table-pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}

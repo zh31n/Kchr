@@ -1,0 +1,57 @@
+.booking {
+  .booking-quotas-table {
+    margin-top: 20px;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 10px 10px;
+
+    table {
+      border-spacing: 0;
+      border-collapse: collapse;
+
+      thead {
+        background: rgba(0, 0, 0, 0.06);
+
+        tr th {
+          text-align: center;
+        }
+      }
+
+      tbody {
+        tr td {
+          background: rgba(255, 255, 255, 0.002);
+          border: 1px solid rgba(234, 234, 234, 0.71);
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .booking-table {
+    margin-top: 20px;
+
+    .status {
+      padding: 13px 0 13px 0;
+      width: 110px;
+      border-radius: 14px;
+      background: yellow;
+      color: #000000;
+      text-align: center;
+    }
+
+    .type-2 {
+      background: yellowgreen;
+      color: #2d3134;
+    }
+
+    .type-3 {
+      background: green;
+      color: #FFFFFF;
+    }
+
+    .type-4 {
+      background: red;
+      color: #FFFFFF;
+    }
+  }
+}

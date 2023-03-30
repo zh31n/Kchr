@@ -1,0 +1,101 @@
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 1460px;
+  margin-right: auto;
+  margin-left: auto;
+  align-items: center;
+  padding: 25px 0;
+  // padding: 25px 50px;
+  // box-shadow: 0 5px 3px -3px rgba(0, 0, 0, 0.05);
+
+  .title {
+    font-weight: 600;
+    font-size: 24px;
+    color: #2D3134;
+  }
+
+  .right {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    .notifications {
+      position: relative;
+      margin-right: 25px;
+
+      &::after {
+        position: absolute;
+        content: '';
+        border-radius: 10px;
+        top: -4px;
+        right: -2px;
+        width: 14px;
+        height: 14px;
+        background: #F66F4D;
+        border: 2px solid #FFFFFF;
+      }
+    }
+
+    .calendar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #F4F4F4;
+      border-radius: 14px;
+      padding: 15px 20px 15px 20px;
+      font-size: 14px;
+      font-family: 'DIN Pro', serif;
+      margin-right: 50px;
+
+      .svg {
+        margin-right: 15px;
+      }
+    }
+
+    .user {
+      position: relative;
+      margin-right: 30px;
+      cursor: pointer;
+
+      img {
+        width: 50px;
+        height: 50px;
+      }
+
+      &::after {
+        content: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.95877 7.49756C5.76855 7.50264 5.58372 7.56181 5.42599 7.66827C5.26826 7.77472 5.14417 7.92398 5.06829 8.09849C4.99242 8.273 4.9679 8.46556 4.99763 8.65352C5.02736 8.84147 5.11009 9.01706 5.23612 9.15964L11.2303 16.1655C11.3241 16.2755 11.4408 16.3639 11.5721 16.4245C11.7035 16.485 11.8464 16.5164 11.991 16.5164C12.1356 16.5164 12.2785 16.485 12.4099 16.4245C12.5412 16.3639 12.6579 16.2755 12.7517 16.1655L18.7517 9.15964C18.8425 9.06068 18.9125 8.94445 18.9574 8.81788C19.0023 8.69131 19.0212 8.557 19.0131 8.42295C19.005 8.2889 18.9699 8.1578 18.9101 8.03759C18.8502 7.91738 18.7667 7.81054 18.6646 7.72328C18.5625 7.63603 18.4439 7.57016 18.3159 7.52974C18.1878 7.48932 18.0529 7.47515 17.9192 7.48799C17.7855 7.50083 17.6558 7.54042 17.5378 7.60448C17.4197 7.66854 17.3158 7.75568 17.2322 7.86077L11.99 13.9799L6.74979 7.86077C6.65383 7.74454 6.53284 7.65158 6.39587 7.58868C6.25889 7.52578 6.10947 7.49458 5.95877 7.49756Z' fill='%23C1C1C1'/%3E%3C/svg%3E%0A");
+        position: absolute;
+        right: -30px;
+        top: 12px;
+      }
+
+      .dropdown {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        background: #FFFFFF;
+        margin-top: 10px;
+        right: -25px;
+        border: 1px solid #C1C1C1;
+        border-radius: 5px;
+        width: 200px;
+        z-index: 2;
+
+        a {
+          font-family: 'DIN Pro', serif;
+          display: flex;
+          align-items: center;
+          width: 100%;
+          height: 45px;
+          padding: 8px 15px;
+          border-bottom: 1px solid #eee;
+
+          &:hover {
+            background: #efefef;
+          }
+        }
+      }
+    }
+  }
+}

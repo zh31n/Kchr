@@ -1,0 +1,232 @@
+.sidebar-wrapper {
+  min-height: 100vh;
+  background: #FFFFFF;
+  border-radius: 2px;
+  -webkit-box-shadow: 2px 0 3px -1px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 2px 0 3px -1px rgba(0, 0, 0, 0.05);
+  box-shadow: 2px 0 3 -1px rgba(0, 0, 0, 0.05);
+
+  .sidebar {
+    position: relative;
+    padding-left: 10px;
+    padding-top: 10px;
+
+    .logo-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 54px;
+
+      &--hide-animate-logo {
+        justify-content: flex-end;
+      }
+    }
+
+    .logo {
+      margin-left: 10px;
+      display: block;
+
+      img {
+        width: 180px;
+        height: 50px;
+      }
+    }
+
+    .toggle-bar {
+      cursor: pointer;
+      margin-right: 10px;
+    }
+
+    .sidebar-animate {
+      width: 300px;
+      transition: width 1s;
+
+      &--slide-in-start {
+        width: 0;
+        overflow: hidden;
+      }
+
+      &--slide-in {
+        width: 300px;
+        overflow: hidden;
+      }
+
+      &--slide-out {
+        width: 0;
+        overflow: hidden;
+      }
+    }
+
+    .sidebar-main-info {
+      width: 300px;
+    }
+
+    .user {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 40px;
+
+      .image img {
+        width: 70px;
+        height: 70px;
+      }
+
+      .name {
+        margin-top: 10px;
+        font-weight: 500;
+        font-size: 24px;
+        color: #2D3134;
+      }
+
+      .email {
+        font-weight: 400;
+        color: #717579;
+      }
+    }
+
+    .menu {
+      display: flex;
+      flex-direction: column;
+      margin-top: 30px;
+
+      .title {
+        font-weight: 400;
+        color: #717579;
+        margin-bottom: 15px;
+      }
+
+      .menu-item {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        padding: 20px 0 20px 20px;
+        position: relative;
+
+        .item {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          cursor: pointer;
+          position: relative;
+
+          svg {
+            margin-right: 20px;
+          }
+
+          svg path {
+            fill: #C1C1C1;
+          }
+
+          span {
+            font-weight: 500;
+            font-size: 18px;
+            color: #717579;
+          }
+        }
+
+        .dropdown {
+          display: flex;
+          flex-direction: column;
+          margin-top: 10px;
+
+          a {
+            font-family: 'DIN Pro', serif;
+            font-weight: 400;
+            font-size: 18px;
+            color: #707579;
+            margin-top: 5px;
+            cursor: pointer;
+          }
+
+          a.router-link-exact-active {
+            color: #F66F4D;
+          }
+        }
+      }
+
+      .menu-item-list {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        padding: 20px 0 20px 20px;
+        position: relative;
+
+        .item {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          cursor: pointer;
+          position: relative;
+
+          svg {
+            margin-right: 20px;
+          }
+
+
+
+          span {
+            font-weight: 500;
+            font-size: 18px;
+          }
+        }
+
+        .dropdown {
+          display: flex;
+          flex-direction: column;
+          margin-top: 10px;
+
+          a {
+            font-family: 'DIN Pro', serif;
+            font-weight: 400;
+            font-size: 18px;
+            color: #707579;
+            margin-top: 5px;
+            cursor: pointer;
+          }
+
+          a.router-link-exact-active {
+            color: #F66F4D;
+          }
+        }
+      }
+
+      // .dropdown:after {
+      //   content: url("data:image/svg+xml,%3Csvg width='14' height='8' viewBox='0 0 14 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L7 7L13 1' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+      //   position: absolute;
+      //   top: 23px;
+      //   right: 30px;
+      //   cursor: pointer;
+      // }
+      .menu-item.router-link-exact-active {
+        border-radius: 14px;
+        margin-right: 40px;
+        background: rgba(255, 212, 130, 0.15);
+
+        svg path {
+          fill: #F66F4D;
+        }
+
+        span {
+          color: #F66F4D;
+        }
+      }
+
+      .act {
+        border-radius: 14px;
+        margin-right: 40px;
+        background: rgba(255, 212, 130, 0.15);
+        fill: #F66F4D;
+
+        svg path {
+          fill: #F66F4D;
+        }
+
+        span {
+          color: #F66F4D;
+        }
+      }
+    }
+  }
+}
