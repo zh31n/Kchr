@@ -145,3 +145,116 @@
   align-items: center;
   margin-top: 15px;
 }
+
+// Data page !!!!!
+
+.data_block {
+  width: 100%;
+  height: 1062px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.06);
+  border-radius: 24px;
+  padding: 25px;
+}
+
+
+select {
+  height: 45px;
+  width: 250px;
+}
+
+.inp_year {
+  width: 250px;
+  height: 45px;
+  background-image: url(../images/calendar_mig.svg);
+  background-repeat: no-repeat;
+  background-position-x: 97%;
+  background-position-y: 9px;
+}
+
+.inp_year::placeholder {
+  color: #001A34;
+}
+
+.button_data_check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 136px;
+  height: 54px;
+  background: #EB564C;
+  border-radius: 14px;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
+}
+
+.button_data_add {
+  width: 228px;
+  height: 53px;
+  background: #23C6C8;
+  border-radius: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
+}
+
+.inputs_data {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.inputs_data_i {
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+  align-items: flex-end;
+}
+
+.table_stat {
+  width: 1000px;
+  margin-top: 4rem;
+
+  .table_stat_h {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 4px;
+
+    div {
+      width: 66px;
+      font-size: 14px;
+      text-align: center;
+      font-weight: 400;
+      color: black;
+    }
+  }
+
+  input {
+    width: 66px;
+    height: 25px;
+    padding: 0;
+    border: 1px solid #F1C3C3;
+    border-radius: 6px;
+    text-align: center;
+    padding-right: 10px;
+    font-size: 12px;
+  }
+
+  .inp_green{
+    border: 1px solid #B5E5B7 !important;
+  }
+}
+
+.table_stat_line{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}

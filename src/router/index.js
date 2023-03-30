@@ -98,6 +98,16 @@ let router = new Router({
         layout: 'main',
         login: false
       }
+    },
+    {
+      path: '/data',
+      name: 'data',
+      component: () => import('../views/data'),
+      meta: {
+        title: 'Данные',
+        layout: 'main',
+        login: false
+      }
     }
   ]
 })

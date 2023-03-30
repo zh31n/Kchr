@@ -78,7 +78,7 @@
                   <router-link @click="isOpen = true" to="/">
                     Статистика
                   </router-link>
-                  <router-link  @click="isOpen = true" to="/">
+                  <router-link  @click="isOpen = true" to="/data">
                     Данные
                   </router-link>
                 </div>
