@@ -108,6 +108,16 @@ let router = new Router({
         layout: 'main',
         login: false
       }
+    },
+    {
+      path: '/clients/hotel',
+      name: 'hotel',
+      component: () => import('../views/hotel'),
+      meta: {
+        title: 'Отель',
+        layout: 'main',
+        login: false
+      }
     }
   ]
 })
