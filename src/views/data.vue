@@ -1,6 +1,6 @@
 <template>
     <div class="content-wrapper">
-        <AddObj />
+        <AddObj style="display: none;"/>
         <div class="data_block">
             <div class="inputs_data">
                 <div class="inputs_data_i">

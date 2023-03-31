@@ -1,6 +1,158 @@
 <template>
   <div class="content-wrapper">
-    <table>
+    <div class="filters_cl">
+      <div class="filters_i">
+        <div class="btn_add">Показать фильтр</div>
+        <div class="filter_input">
+          <input type="text" placeholder="Наименование отеля или id">
+          <div class="search_btn">
+            <img src="../assets/images/search.svg" alt="">
+          </div>
+        </div>
+        <div class="btn_add">Применить</div>
+      </div>
+      <div class="btn_add">
+        <img src="../assets/images/plus.svg" alt="">
+        Добавить
+      </div>
+    </div>
+    <div class="hotel_cards">
+      <div class="hc_item">
+        <div class="hc_date">
+          <div class="pos">#1</div>
+          <div class="status">создан</div>
+          <div class="date">12.10.2022</div>
+        </div>
+        <div class="hc_inform">
+          <img class="h_img" src="../assets/images/hotel_img.svg" alt="">
+          <div class="hc_inform_i">
+            <div class="h_name">
+              Royal Отель
+              <div class="stars">
+                <img src="../assets/images/star.svg" alt="">
+                <img src="../assets/images/star.svg" alt="">
+                <img src="../assets/images/star.svg" alt="">
+                <img src="../assets/images/star.svg" alt="">
+              </div>
+            </div>
+            <div class="h_loc">Карачаево-Черкесская республика, Архыз</div>
+            <div class="h_characters">
+              <div class="f_bl">
+                <div class="">
+                  <input type="checkbox">
+                  Действующий
+                </div>
+                <div class="">Тип: отель</div>
+                <div class="">Стилистика: Вагон-домик</div>
+              </div>
+              <div class="s_bl">
+                <div class="">Номер телефона: 8-993-338-37-76</div>
+                <div class="">Количество категорий: 12</div>
+                <div class="">Количество койко-мест: 321</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="change_btn">
+          <img src="../assets/images/pencil.svg" alt="">
+          Редактировать
+        </div>
+      </div>
+      <div class="hc_item">
+        <div class="hc_date">
+          <div class="pos">#1</div>
+          <div class="status">создан</div>
+          <div class="date">12.10.2022</div>
+        </div>
+        <div class="hc_inform">
+          <img class="h_img" src="../assets/images/hotel_img.svg" alt="">
+          <div class="hc_inform_i">
+            <div class="h_name">
+              Royal Отель
+              <div class="stars">
+                <img src="../assets/images/star.svg" alt="">
+                <img src="../assets/images/star.svg" alt="">
+                <img src="../assets/images/star.svg" alt="">
+                <img src="../assets/images/star.svg" alt="">
+              </div>
+            </div>
+            <div class="h_loc">Карачаево-Черкесская республика, Архыз</div>
+            <div class="h_characters">
+              <div class="f_bl">
+                <div class="">
+                  <input type="checkbox">
+                  Действующий
+                </div>
+                <div class="" style="opacity: 0;">Тип: отель</div>
+                <div class="">Рейтинг: 4.7 (36 отзывов)</div>
+              </div>
+              <div class="s_bl">
+                <div class="">Номер телефона: 8-993-338-37-76</div>
+                <div class="">Количество категорий: 12</div>
+                <div class="" style="opacity: 0;">Количество койко-мест: 321</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="change_btn">
+          <img src="../assets/images/pencil.svg" alt="">
+          Редактировать
+        </div>
+      </div>
+      <div class="hc_item">
+        <div class="hc_date">
+          <div class="pos">#1</div>
+          <div class="status">создан</div>
+          <div class="date">12.10.2022</div>
+        </div>
+        <div class="hc_inform">
+          <img class="h_img" src="../assets/images/hotel_img.svg" alt="">
+          <div class="hc_inform_i">
+            <div class="h_name">
+              Royal Отель
+              <div class="stars">
+                <img src="../assets/images/star.svg" alt="">
+                <img src="../assets/images/star.svg" alt="">
+                <img src="../assets/images/star.svg" alt="">
+                <img src="../assets/images/star.svg" alt="">
+              </div>
+            </div>
+            <div class="h_loc">Карачаево-Черкесская республика, Архыз</div>
+            <div class="h_characters">
+              <div class="f_bl">
+                <div class="">
+                  <input type="checkbox">
+                  Действующий
+                </div>
+                <div class="" style="opacity: 0;">Тип: отель</div>
+                <div class="">Рейтинг: 4.7 (36 отзывов)</div>
+              </div>
+              <div class="s_bl">
+                <div class="">Номер телефона: 8-993-338-37-76</div>
+                <div class="">Количество категорий: 12</div>
+                <div class="" style="opacity: 0;">Количество койко-мест: 321</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="change_btn">
+          <img src="../assets/images/pencil.svg" alt="">
+          Редактировать
+        </div>
+      </div>
+      <div class="pagenation_bar">
+        <span>&#60;</span>
+        <span>1</span>
+        ..
+        <span>6</span>
+        <span>7</span>
+        <span>8</span>
+        ..
+        <span>135</span>
+        <span>&#62;</span>
+      </div>
+    </div>
+    <!-- <table>
       <thead>
       <tr>
         <th scope="col">#</th>
@@ -73,12 +225,12 @@
         </td>
       </tr>
       </tbody>
-    </table>
+    </table> -->
   </div>
 </template>
 
 <script>
-import {mapGetters} from 'vuex'
+import { mapGetters } from 'vuex'
 
 export default {
   name: 'services',
@@ -91,7 +243,7 @@ export default {
       action: ''
     }
   },
-  async mounted () {
+  async mounted() {
     await this.fetchClients()
     this.$root.$on('linkFetchClients', () => {
       this.fetchClients()
@@ -107,7 +259,7 @@ export default {
   },
   methods: {
     openEditModal: function (item) {
-      this.$root.$emit('triggerModal', {name: 'editClientModal', data: item})
+      this.$root.$emit('triggerModal', { name: 'editClientModal', data: item })
     },
     // Получение списка клиентов
     fetchClients: async function () {
