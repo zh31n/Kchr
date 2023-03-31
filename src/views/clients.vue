@@ -1,5 +1,7 @@
 <template>
   <div class="content-wrapper">
+    <CreateHotel v-if="isShow" @closeModal="closeMyModal" />
+    <ChangeHotel v-if="isShowChange" @closeModal="closeMyModal" />
     <div class="filters_cl">
       <div class="filters_i">
         <div class="btn_add">Показать фильтр</div>
@@ -11,7 +13,7 @@
         </div>
         <div class="btn_add">Применить</div>
       </div>
-      <div class="btn_add">
+      <div class="btn_add" @click="showModal">
         <img src="../assets/images/plus.svg" alt="">
         Добавить
       </div>
@@ -53,7 +55,7 @@
             </div>
           </div>
         </div>
-        <div class="change_btn">
+        <div class="change_btn" @click="showModalChange">
           <img src="../assets/images/pencil.svg" alt="">
           Редактировать
         </div>
@@ -231,40 +233,57 @@
 
 <script>
 import { mapGetters } from 'vuex'
+import CreateHotel from '../components/Modal/CreateHotel.vue'
+import ChangeHotel from '../components/Modal/ChangeHotel.vue'
+
 
 export default {
-  name: 'services',
+  name: "services",
+  comments: {},
   data: function () {
     return {
+      isShow: false,
+      isShowChange: false,
       data: {
         limit: 12,
-        search: ''
+        search: ""
       },
-      action: ''
-    }
+      action: ""
+    };
   },
   async mounted() {
-    await this.fetchClients()
-    this.$root.$on('linkFetchClients', () => {
-      this.fetchClients()
-    })
+    await this.fetchClients();
+    this.$root.$on("linkFetchClients", () => {
+      this.fetchClients();
+    });
   },
   computed: {
-    ...mapGetters(['getClients']),
+    ...mapGetters(["getClients"]),
     fullName: function () {
       return this.getClients.map(function (item) {
-        return item.surname + ' ' + item.name + ' ' + item.middle_name
-      })
+        return item.surname + " " + item.name + " " + item.middle_name;
+      });
     }
   },
   methods: {
     openEditModal: function (item) {
-      this.$root.$emit('triggerModal', { name: 'editClientModal', data: item })
+      this.$root.$emit("triggerModal", { name: "editClientModal", data: item });
     },
     // Получение списка клиентов
     fetchClients: async function () {
-      await this.$store.dispatch('getClients', this.data)
+      await this.$store.dispatch("getClients", this.data);
+    },
+    showModal() {
+      this.isShow = true;
+    },
+    showModalChange() {
+      this.isShowChange = true;
+    },
+    closeMyModal() {
+      this.isShow = false;
+      this.isShowChange = false;
     }
-  }
+  },
+  components: { CreateHotel, ChangeHotel }
 }
 </script>
