@@ -138,7 +138,37 @@ let router = new Router({
         layout: 'main',
         login: false
       }
-    }
+    },
+    {
+      path: '/ksr/1',
+      name: 'ksr',
+      component: () => import('../views/ksr/1'),
+      meta: {
+        title: 'ksr',
+        layout: 'main',
+        login: false
+      }
+    },
+    {
+      path: '/ksr/2',
+      name: 'ksr',
+      component: () => import('../views/ksr/2'),
+      meta: {
+        title: 'ksr',
+        layout: 'main',
+        login: false
+      }
+    },
+    {
+      path: '/ksr/1',
+      name: 'ksr',
+      component: () => import('../views/ksr/2'),
+      meta: {
+        title: 'ksr',
+        layout: 'main',
+        login: false
+      }
+    },
   ]
 })
 

@@ -46,15 +46,15 @@
             />
           </div>
         </div>
-        <label class="checkbox-action">
+        <!-- <label class="checkbox-action">
           <input type="checkbox" v-model="data.notifications" true-value="1" false-value="0"/>
           <span class="custom-input"/>
           <span class="label-text">
             Получать уведомление о заказах
           </span>
-        </label>
+        </label> -->
       </div>
-      <div class="settings-card">
+      <!-- <div class="settings-card">
         <h3 class="settings-card-title">
           Информация о компании
         </h3>
@@ -151,11 +151,11 @@
             />
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
-    <div class="d-flex justify-content-end">
+    <!-- <div class="d-flex justify-content-end">
       <button class="btn btn-success w-200 mt-3" @click="update">Сохранить</button>
-    </div>
+    </div> -->
   </div>
 </template>
 
