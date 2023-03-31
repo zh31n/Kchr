@@ -118,6 +118,26 @@ let router = new Router({
         layout: 'main',
         login: false
       }
+    },
+    {
+      path: '/management',
+      name: 'management',
+      component: () => import('../views/management'),
+      meta: {
+        title: 'management',
+        layout: 'main',
+        login: false
+      }
+    },
+    {
+      path: '/management/data',
+      name: 'data',
+      component: () => import('../views/management/data'),
+      meta: {
+        title: 'data',
+        layout: 'main',
+        login: false
+      }
     }
   ]
 })
