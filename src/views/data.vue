@@ -91,11 +91,11 @@
     </div>
 </template>
 <script>
-import AddObj from '../components/Modal/Data/AddObj.vue';
+import AddObj from '../components/Modal/Data/AddObj.vue'
 
 export default {
-    name: "data",
-    comments: {},
-    components: { AddObj }
+  name: 'data',
+  comments: {},
+  components: { AddObj }
 }
 </script>

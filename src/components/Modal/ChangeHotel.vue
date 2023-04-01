@@ -108,17 +108,15 @@
 </template>
 <script>
 export default {
-    name: 'ChangeHotel',
-    data(){
-        return{
-
-        }
-    },
-    methods:{
-        closeModal(){
-            this.$emit('closeModal')
-        }
+  name: 'ChangeHotel',
+  data: function () {
+    return {}
+  },
+  methods: {
+    closeModal: function () {
+      this.$emit('closeModal')
     }
+  }
 }
 </script>
 

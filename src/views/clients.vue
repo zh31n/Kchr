@@ -236,9 +236,8 @@ import { mapGetters } from 'vuex'
 import CreateHotel from '../components/Modal/CreateHotel.vue'
 import ChangeHotel from '../components/Modal/ChangeHotel.vue'
 
-
 export default {
-  name: "services",
+  name: 'services',
   comments: {},
   data: function () {
     return {
@@ -246,42 +245,42 @@ export default {
       isShowChange: false,
       data: {
         limit: 12,
-        search: ""
+        search: ''
       },
-      action: ""
-    };
+      action: ''
+    }
   },
-  async mounted() {
-    await this.fetchClients();
-    this.$root.$on("linkFetchClients", () => {
-      this.fetchClients();
-    });
+  async mounted () {
+    await this.fetchClients()
+    this.$root.$on('linkFetchClients', () => {
+      this.fetchClients()
+    })
   },
   computed: {
-    ...mapGetters(["getClients"]),
+    ...mapGetters(['getClients']),
     fullName: function () {
       return this.getClients.map(function (item) {
-        return item.surname + " " + item.name + " " + item.middle_name;
-      });
+        return item.surname + ' ' + item.name + ' ' + item.middle_name
+      })
     }
   },
   methods: {
     openEditModal: function (item) {
-      this.$root.$emit("triggerModal", { name: "editClientModal", data: item });
+      this.$root.$emit('triggerModal', { name: 'editClientModal', data: item })
     },
     // Получение списка клиентов
     fetchClients: async function () {
-      await this.$store.dispatch("getClients", this.data);
+      await this.$store.dispatch('getClients', this.data)
     },
-    showModal() {
-      this.isShow = true;
+    showModal () {
+      this.isShow = true
     },
-    showModalChange() {
-      this.isShowChange = true;
+    showModalChange () {
+      this.isShowChange = true
     },
-    closeMyModal() {
-      this.isShow = false;
-      this.isShowChange = false;
+    closeMyModal () {
+      this.isShow = false
+      this.isShowChange = false
     }
   },
   components: { CreateHotel, ChangeHotel }

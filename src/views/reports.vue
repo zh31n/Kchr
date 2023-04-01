@@ -217,7 +217,7 @@ export default {
       action: ''
     }
   },
-  async mounted() {
+  mounted: async function () {
     this.fetchBookingsTable()
   },
   computed: {
@@ -268,7 +268,7 @@ export default {
     /* eslint-enable */
   },
   methods: {
-    pageChangeHandler(selectedPage) {
+    pageChangeHandler (selectedPage) {
       this.data.page = selectedPage
       this.fetchBookingsTable()
     },

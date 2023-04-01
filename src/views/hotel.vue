@@ -89,6 +89,6 @@
 </template>
 <script>
 export default {
-    name: 'hotel'
+  name: 'hotel'
 }
 </script>

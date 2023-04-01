@@ -8,7 +8,7 @@
         <!--Нужно для анимации-->
         <router-link v-if="showLoggo" to="/">
           <div class="logo_img_container">
-            <img class="logo_img" src="@/assets/images/logo.png">
+            <img class="logo_img" src="../assets/images/logo.png">
             <div class="logo_img_text">МТиК КЧР</div>
           </div>
         </router-link>
@@ -27,7 +27,7 @@
           <div class="sidebar-main-info">
             <div class="user">
               <div class="image">
-                <img v-if="!$store.state.Login.image" src="@/assets/images/user/logo.png" />
+                <img v-if="!$store.state.Login.image" src="../assets/images/user/logo.png" />
                 <img v-else :src="$store.state.Login.image">
               </div>
               <p class="name">{{ $store.state.Login.fullName }}</p>
@@ -114,13 +114,13 @@
                 </div>
                 <div class="dropdown" v-if="action === 'management'">
                   <router-link @click="isOpen = true" to="/ksr/1">
-                    Число ночевок в КСР
+                    <span>Число ночевок в КСР</span>
                   </router-link>
                   <router-link @click="isOpen = true" to="/ksr/2">
-                    Число граждан, размещённых в КСР
+                    <span>Число граждан, размещённых в КСР</span>
                   </router-link>
                   <router-link @click="isOpen = true" to="/ksr/3">
-                    Актуальный каталог респондентов из Росстата 
+                    <span>Актуальный каталог респондентов из Росстата</span>
                   </router-link>
                 </div>
               </a>
@@ -170,8 +170,6 @@ export default {
       hideAnimateLogo: false,
       isOpen: false
     }
-  },
-  async mounted() {
   },
   computed: {},
   methods: {

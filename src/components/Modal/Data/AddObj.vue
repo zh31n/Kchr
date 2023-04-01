@@ -23,8 +23,8 @@
 
 <script>
 export default {
-    name: 'AddObj',
-    comments: {}
+  name: 'AddObj',
+  comments: {}
 }
 </script>
 

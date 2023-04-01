@@ -77,17 +77,15 @@
     </div>
 </template>
 <script>
-import lineChart from '../components/Chart/line-chart';
-
-
+import lineChart from '../components/Chart/line-chart'
 
 export default {
-    name: "management",
-    comments: {},
-    data() {
-        return {};
-    },
-    components: { lineChart }
+  name: 'management',
+  comments: {},
+  data: function () {
+    return {}
+  },
+  components: { lineChart }
 }
 </script>
 <style scoped lang="scss">
@@ -185,7 +183,6 @@ export default {
     }
 }
 
-
 .graphics_wrapper {
     display: flex;
     justify-content: space-between;
@@ -194,7 +191,6 @@ export default {
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
-
 
 .statistic-line {
     width: 720px;
@@ -208,7 +204,6 @@ export default {
         height: 100%;
         padding: 25px;
     }
-
 
     .sl_h {
         display: flex;
@@ -238,7 +233,6 @@ export default {
         }
     }
 }
-
 
 .sl_line {
     display: flex;

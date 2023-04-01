@@ -1,7 +1,7 @@
 <template>
   <div class="header-wrapper">
     <!-- <h1 class="title">{{ this.$route.meta.title }}</h1> -->
-    <h1 class="title">Ключевые показатели мониторинга развития туризма на территории КЧР</h1>
+    <h1 class="title">Ключевые показатели мониторинга развития туризма на территории КЧР</h1>
     <div class="right">
       <div class="notifications">//
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -34,7 +34,7 @@
         {{ $moment().format('MMMM DD') }}, {{ $moment().format('YYYY') }}
       </div>
       <div class="user" @click="dropdown = !dropdown">
-        <img src="@/assets/images/user/logo.png">
+        <img src="../assets/images/user/logo.png">
         <transition enter-active-class="animate__animated animate__fadeIn"
                     leave-active-class="animate__animated animate__fadeOut">
           <div class="dropdown" v-if="dropdown">

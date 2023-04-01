@@ -168,7 +168,7 @@ let router = new Router({
         layout: 'main',
         login: false
       }
-    },
+    }
   ]
 })
 

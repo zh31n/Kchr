@@ -12,7 +12,7 @@ export default {
   name: 'App',
   computed: {
     layout: function () {
-      return Object.keys(this.$route.meta).length === 0 ? 'main-layout' : (this.$route.meta.layout) + '-layout'
+      return Object.keys(this.$route.meta).length === 0 ? 'free-layout' : (this.$route.meta.layout) + '-layout'
     }
   },
   async mounted () {

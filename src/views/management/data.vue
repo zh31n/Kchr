@@ -54,7 +54,7 @@
 </template>
 <script>
 export default {
-    name: 'data',
-    components: {}
+  name: 'data',
+  components: {}
 }
 </script>

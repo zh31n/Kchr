@@ -449,7 +449,7 @@ export default {
       sourceChart: []
     }
   },
-  async mounted() {
+  mounted: async function () {
     this.data.dates.push(this.$moment().format('Y-MM-DD'))
     this.data.dates.push(this.$moment().add(1, 'd').format('Y-MM-DD'))
     await this.fetchInfo()
